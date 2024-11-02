@@ -146,9 +146,9 @@ nav.navbar .nav-links a:hover {
   }
 }
 
-@media (max-width: 853px){
+@media (max-width: 1024px){
   nav.navbar .logo p {
-    padding-top: 10px;
+    padding-top: 1px;
     font-weight: bold;
     font-size: 20px;
   }
