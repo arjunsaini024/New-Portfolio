@@ -125,22 +125,22 @@ nav.navbar .nav-links a:hover {
     font-size: 20px;
   }
 
-  /* Show navbar links when active */
+  
   nav.navbar .nav-links.active {
     display: flex;
   }
 
-  /* Menu toggle button */
+  
   .menu-toggle {
     display: block;
   }
 
-  /* Hide download button by default in mobile view */
+ 
   .nav-button {
     display: none;
   }
 
-  /* Show download button when active */
+ 
   .nav-button.active {
     display: flex;
   }
@@ -151,5 +151,91 @@ nav.navbar .nav-links a:hover {
     padding-top: 1px;
     font-weight: bold;
     font-size: 20px;
+  }
+}
+
+.About {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+}
+
+.About-cont {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.box-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px; 
+}
+
+.box-1 img {
+  width: 100%; 
+  max-width: 380px; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.box-2 {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  width: 100%; 
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: normal; 
+  margin-bottom: 15px;
+}
+
+span {
+  font-weight: bold; 
+}
+
+.box-2>p {
+  font-size: 1rem;
+  margin-bottom: 10px; 
+  line-height: 1.5;
+  color: #71717A;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .About-cont {
+    flex-direction: row; 
+  }
+
+  .box-1 {
+    width: 40%; 
+    margin-right: 20px; 
+  }
+
+  .box-2 {
+    width: 60%; 
+    text-align: left; 
+    justify-content: flex-start; 
+  }
+
+  h1 {
+    font-size: 2.5rem; 
+  }
+
+  p {
+    font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem; 
   }
 }
